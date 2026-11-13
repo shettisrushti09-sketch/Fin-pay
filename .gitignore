@@ -1,0 +1,10 @@
+backend/venv/
+backend/.venv/
+frontend/node_modules/
+frontend/dist/
+**/__pycache__/
+*.pyc
+.env
+.env.*
+
+backend/finpay.db

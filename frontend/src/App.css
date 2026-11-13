@@ -1,0 +1,52 @@
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f6fb; color: #172033; }
+button { border: 0; border-radius: 9px; padding: 12px 18px; background: #5546e8; color: white; font-weight: 600; cursor: pointer; }
+button:hover { background: #4032c7; }
+input, select { width: 100%; padding: 13px; margin: 10px 0 15px; border: 1px solid #dce1ec; border-radius: 8px; font-size: 14px; }
+.login-page { min-height: 100vh; display: grid; place-items: center; background: linear-gradient(135deg,#29206f,#6957ee); padding: 20px; }
+.login-card { width: 100%; max-width: 400px; background: white; padding: 35px; border-radius: 18px; box-shadow: 0 20px 60px #17104455; }
+.login-card h1 { margin-bottom: 5px; }
+.login-card p { color: #788096; margin-bottom: 25px; }
+.login-card label { font-size: 13px; font-weight: bold; }
+.login-card button { width: 100%; margin-top: 10px; }
+.logo, .sidebar h2 span { display: inline-grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; background: #5546e8; color: white; font-size: 23px; font-weight: bold; }
+.app { min-height: 100vh; display: flex; }
+.sidebar { width: 230px; background: #191638; color: white; padding: 28px 20px; display: flex; flex-direction: column; gap: 18px; }
+.sidebar h2 { display: flex; align-items: center; gap: 10px; margin: 0 0 25px; }
+.sidebar h2 span { background: #7568ff; }
+.sidebar p { color: #c5c2df; padding: 12px; margin: 0; border-radius: 8px; }
+.sidebar .nav-active { background: #39326d; color: white; }
+.sidebar .logout { margin-top: auto; background: #39326d; }
+.content { flex: 1; max-width: 1250px; padding: 35px; margin: auto; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; }
+header h1 { margin: 0 0 7px; }
+header p, .panel p { color: #7b8499; margin-top: 0; }
+.profile { background: white; padding: 12px 18px; border-radius: 10px; }
+.balance-card { background: linear-gradient(115deg,#5546e8,#8878ff); color: white; border-radius: 18px; padding: 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 12px 25px #5546e833; }
+.balance-card p { opacity: .85; }
+.balance-card h1 { font-size: 38px; margin: 12px 0; }
+.balance-card span { opacity: .85; }
+.wallet-icon { font-size: 45px; width: 75px; height: 75px; border: 1px solid #ffffff66; border-radius: 20px; display: grid; place-items: center; }
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0; }
+.panel { background: white; padding: 23px; border-radius: 14px; box-shadow: 0 4px 18px #1820440a; }
+.panel h3 { margin-top: 0; }
+.panel button { width: 100%; }
+.transactions { margin-bottom: 20px; }
+.table-heading { display: flex; justify-content: space-between; align-items: center; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 15px 10px; border-bottom: 1px solid #edf0f5; font-size: 14px; }
+th { color: #7b8499; }
+.success { color: #168653; background: #e5f8ef; padding: 6px 10px; border-radius: 20px; font-size: 12px; }
+.refresh { background: #eceaff; color: #5546e8; }
+.notice, .message { background: #eeedff; color: #4032c7; padding: 12px; border-radius: 8px; margin-bottom: 15px; }
+@media (max-width: 750px) {
+  .app { display: block; }
+  .sidebar { width: 100%; }
+  .sidebar p { display: none; }
+  .sidebar .logout { margin-top: 0; }
+  .content { padding: 18px; }
+  .actions { grid-template-columns: 1fr; }
+  header { gap: 12px; }
+}
